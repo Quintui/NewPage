@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,12 +13,19 @@ import {
 import SideBar from './components/SideBar/Sidebar';
 
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => { 
+    setIsOpen(!isOpen)
+  }
+
   return (
     <Router>
         <Switch>
             <Route>
-                <NavBar/>
-                <SideBar/>
+                <NavBar  toggle = {toggle}/>
+                <SideBar toggle = {toggle} isOpen ={isOpen}/>
             </Route>
         </Switch>
     </Router>
