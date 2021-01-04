@@ -6,7 +6,9 @@ import {
     NavLinkUl,
     NavLinkLi,
     NavLinks,
-    MobileIcon
+    MobileIcon,
+    NavBtn,
+    NavBtnLink
 } from './NavBarElements';
 
 import {FaBars} from 'react-icons/fa'
@@ -28,27 +30,29 @@ const NavBar = () => {
                             </NavLinks>
                         </NavLinkLi>
                         <NavLinkLi>
-                            <NavLinks to = 'examples'>
+                            <NavLinks to = '/examples'>
                                Examples
                             </NavLinks>
                         </NavLinkLi>
                         <NavLinkLi>
-                            <NavLinks >
+                            <NavLinks to = '/contact' >
                                 About
                             </NavLinks>
                         </NavLinkLi>
                         <NavLinkLi>
-                            <NavLinks>
+                            <NavLinks to = ''>
                                 About
                             </NavLinks>
                         </NavLinkLi>
                         <NavLinkLi>
-                            <NavLinks>
+                            <NavLinks to = ''>
                                 About
                             </NavLinks>
                         </NavLinkLi>
                     </NavLinkUl>
-
+                <NavBtn>
+                    <NavBtnLink to = '/signin'> Sing In </NavBtnLink>
+                </NavBtn>
                </NavbarContainer>
             </Nav>  
         </>

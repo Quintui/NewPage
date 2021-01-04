@@ -10,7 +10,6 @@ export const Nav = styled.nav`
     font-size: 16px;
     justify-content: center;
     
-    
 `
 export const NavbarContainer = styled.div`
     max-width: 1500px;
@@ -20,6 +19,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
     padding: 0 30px;
+    
 `
 export const NavLogo = styled(LinkR)`
     cursor: pointer;
@@ -29,6 +29,7 @@ export const NavLogo = styled(LinkR)`
     text-decoration: none;
     font-weight: 700;
     color: #fff;
+    outline: none
 
 ` 
 export const NavLinkUl = styled.ul`
@@ -39,7 +40,7 @@ export const NavLinkUl = styled.ul`
     align-items: center;
     justify-content: end;
 
-    @media screen and (max-width: 900px ) {
+    @media screen and (max-width: 1000px ) {
         display: none;
     }
 
@@ -47,12 +48,9 @@ export const NavLinkUl = styled.ul`
 export const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 900px) {
-        display: block;
-        position: absolute;
-        top:0;
-        right: 0;
-        transform: translate( -100%, 60%);
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        align-items: center;
         font-size: 1.8rem;
         cursor: pointer;
         color: #fff
@@ -74,4 +72,36 @@ export const NavLinks = styled(LinkS)`
     height:  100%;
     font-size: 18px;
     padding-right: 30px
+`
+
+export const NavBtn = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+`
+
+export const NavBtnLink = styled(LinkR)`
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        
+    }
+    
 `
