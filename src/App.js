@@ -9,6 +9,7 @@ import {
   // useRouteMatch,
   // useParams
 } from "react-router-dom";
+import SideBar from './components/SideBar/Sidebar';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
             <Route>
                 <NavBar/>
+                <SideBar/>
             </Route>
         </Switch>
     </Router>

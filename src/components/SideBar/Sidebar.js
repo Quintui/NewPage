@@ -1,9 +1,11 @@
 import React from 'react'
-
+import {
+    SideBarContainer
+} from './SidebarElements'
 const SideBar = () => {
     return (
         <SideBarContainer>
-            <Icon>
+             {/* <Icon>
                 <CloseBtn/>
             </Icon>
             <SideBarWrapper>
@@ -17,7 +19,7 @@ const SideBar = () => {
                 <SidebarBtn>
                     <SidebarRoute to = '/signin'> Sign In </SidebarRoute>
                 </SidebarBtn>
-            </SideBarWrapper>
+            </SideBarWrapper> */}
         </SideBarContainer>
     )
 }
